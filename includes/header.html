@@ -1,0 +1,39 @@
+<div class="header">
+	<div class="titletext">
+		<div class="wrapper"> 
+			<p><span class="caps">C</span>REAGH <span class="caps">C</span>REATIONS</p>
+			<div class="navigation headerbar">
+				<ul>
+					<li class="isFirst"><a href="" ng-click="vm.nav='About'" ng-class="{isSelected: vm.nav=='About'}">About</a></li>				
+					<li><a href="" ng-click="vm.nav='Projects';vm.projectsNav='Main'" ng-class="{isSelected: vm.nav=='Projects'}">Projects</a></li>
+					<li class="isLast"><a href="" ng-click="vm.nav='Contact'" ng-class="{isSelected: vm.nav=='Contact'}">Contact</a></li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div class="descriptionbar">				
+		<div class="wrapper">
+			<div class="description">
+				Native Mobile &amp; Web Apps Design &amp; Development
+			</div>
+		</div>
+	</div>
+</div>
+<div class="navigation middle">
+	<div class="specialwrapper">
+		<ul>
+			<li class="isFirst" ng-hide="vm.nav=='Projects'"><a href="" ng-click="vm.nav='Projects'" >Projects</a></li>
+			<li class="isLast" ng-hide="vm.nav=='Contact'"><a href="" ng-click="vm.nav='Contact'" >Contact</a></li>
+			<li class="isLast" ng-hide="vm.nav=='About'"><a href="" ng-click="vm.nav='About'" >About</a></li>
+		</ul>
+			
+		<div id="location">
+			<div ng-hide="vm.nav=='Projects'">&nbsp;&nbsp;-&nbsp;&nbsp;{{vm.nav}}&nbsp;&nbsp;-&nbsp;&nbsp;</div>
+			<div ng-show="vm.nav=='Projects'">&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="" ng-click="vm.projectsNav='Main'">{{vm.nav}}</a>&nbsp;&nbsp;&nbsp;&nbsp;<span ng-hide="vm.projectsNav=='Main'">	|  &nbsp;&nbsp;&nbsp;&nbsp;{{vm.projectsNav}}&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			</div>
+		</div>
+	</div>			
+</div>

@@ -1,0 +1,64 @@
+/* this bit ensure the social icons don't appear on the iphone resolution
+*/
+
+div.socialicons {
+    display: none;
+}
+
+@media screen and (min-width: 480px){
+
+    div.socialicons {
+        display: block;
+        float: right;
+        overflow-y: auto;        
+        bottom: 0;
+        right: 0;	    
+        width: 10em;
+        margin: 0 auto;    
+        padding: 0.75em 0 0.6em 0; 
+    }
+
+    a.socialicon {
+        float: right;
+        width: 1.5em;
+        height: 1.5em;
+        margin-left: 0.5em;
+        border-radius: 3px;    
+        box-shadow: none;
+        background-image: url( "../images/social/g-plus.png" );
+        background-size: 100%;
+    }
+
+    a.socialicon:hover{
+        box-shadow: -0.125em 0.125em 0.5em rgba(0, 0, 0, 0.5);        
+    }
+
+    a.socialicon:link,
+    a.socialicon:visited {
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        -ms-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+    }
+
+    a.socialicon.google{ 
+        background-image: url( "../images/social/g-plus.png" );
+    }
+
+    a.socialicon.facebook{ 
+        background-image: url( "../images/social/facebook.png" );
+    }
+
+    a.socialicon.twitter{ 
+        background-image: url( "../images/social/twitter.png" );
+    }
+
+    a.socialicon.linkedin{ 
+        background-image: url( "../images/social/LinkedIn.png" );
+    }
+
+    a.socialicon.email{ 
+        background-image: url( "../images/social/emailicon.png" );
+    }
+}

@@ -1,0 +1,44 @@
+[
+  { 
+    "name": "email",
+    "mainImage": "../images/social/LargeEmail.png",
+    "rollOverImage": "../images/social/GQ_LargeEmail-copy.png",
+    "link": "mailto:daniel@creagh.com"
+  },
+  { 
+    "name": "Linked In",
+    "mainImage": "../images/social/gq_LinkedIn.png",
+    "rollOverImage": "../images/social/gq_LinkedInRollOverSmall.png",
+    "link": "http://www.linkedin.com/in/danielcreagh"
+  },
+  { 
+    "name": "Google+",
+    "mainImage": "../images/social/gq_LargeGooglePlus.png",
+    "rollOverImage": "../images/social/gq_LargeGooglePlusRollOver.png",
+    "link": "https://plus.google.com/102018213089270702074/about"
+  },
+  { 
+    "name": "Facebook",
+    "mainImage": "../images/social/gq_LargeFacebook.png",
+    "rollOverImage": "../images/social/gq_LargeFacebookRollOver.png",
+    "link": "http://www.facebook.com/pages/Creagh-Creations/246173405501592"
+  },
+  { 
+    "name": "Twitter",
+    "mainImage": "../images/social/twitter-bird-white-on-blue.png",
+    "rollOverImage": "../images/social/GQ_twitter-bird-RollOver.png",
+    "link": "https://twitter.com/share?text=@creagh2%20Great%20mobile%20and%20web%20design%20and%20development!&url=http://www.creagh.com/"
+  },
+  { 
+    "name": "GitHub",
+    "mainImage": "../images/social/GItHubContactPanelNormal.png",
+    "rollOverImage": "../images/social/GItHubContactPanelDistorted.png",
+    "link": "https://github.com/DanielCreagh"
+  },
+  { 
+    "name": "Stack Overflow",
+    "mainImage": "../images/social/SO_large.png",
+    "rollOverImage": "../images/social/SO_large_rollOver.png",
+    "link": "http://stackoverflow.com/users/2319825/daniel-creagh"
+  }
+]

@@ -1,0 +1,40 @@
+[
+  { 
+    "name": "Burst Crew @ Clear Bar",
+    "mainImage": "../images/thumbnails/flash/flashThumbplaceholder.png",
+    "rollOverImage": "../images/thumbnails/flash/ClearBarOverlay.png",
+    "description": "Burst Crew at Clear Bar Newcastle",
+    "link": "http://creagh.com/projects/flash/ClearBar/ClearBarAnimation.html",
+    "details": [ 
+      "Photography from live event",
+      "Music composition",
+      "Very early personal project"
+    ]
+  },
+  { 
+    "name": "Flake",
+    "mainImage": "../images/thumbnails/flash/FlakeThumb01.jpg",
+    "rollOverImage": "../images/thumbnails/flash/FlakeOverlay.png",
+    "description": "Flake (Fl -ash, sn-ake)",
+    "link": "http://creagh.com/projects/flash/Flake/flake.html",
+    "details": [ 
+      "Adobe Flash",
+      "Action Script 3",
+      "Personal project/experiment"
+    ]
+  },  
+  { 
+    "name": "Ninja",
+    "mainImage": "../images/thumbnails/ios/ninja_sticker.png",
+    "rollOverImage": "../images/thumbnails/ios/ninja_stickerRollOver.png",
+    "description": "Ninja: Work in Progress",
+    "link": "#",
+    "details": [ 
+      "Prototype",
+      "Innovative video game mechanic",
+      "Flash & iOS",
+      "Photoshop"
+    ]
+  }
+]
+

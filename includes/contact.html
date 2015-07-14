@@ -1,0 +1,9 @@
+<div class="content wrapper" ng-repeat="(index, contactMethod) in vm.contactsData">
+	<div class="contactcontainer">
+		<a class="contactpanel" href={{contactMethod.link}} ng-class="{right: index != 0 && (index+1)%3 == 0}">					
+			<div class="largesocialicon" ng-style="{ 'background-image': 'url(' + contactMethod.rollOverImage + ')' }" >
+				<img ng-src={{contactMethod.mainImage}} alt={{contactMethod.name}}/>
+			</div>
+		</a>
+	</div>
+</div>	

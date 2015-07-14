@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+
+<head>
+	<meta charset="utf-8">
+	<title>Creagh Creations. Web Design and Development.</title>
+
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+	<link rel="stylesheet" type="text/css" href="styles/reset.css" />
+	<link rel="stylesheet" type="text/css" href="styles/footer.css" />
+	<link rel="stylesheet" type="text/css" href="styles/mainCreaghStyles.css" />
+	<link rel="stylesheet" type="text/css" href="styles/socialicons.css" />
+	<link rel="stylesheet" type="text/css" href="styles/utilities.css" />
+	<link rel="stylesheet" type="text/css" href="styles/contact.css" />	
+	<link rel="stylesheet" type="text/css" href="styles/mainprojects.css" />	
+
+	<script src="scripts/angular.js"></script>
+	<script src="scripts/dataService.js"></script>
+	<script src="scripts/creaghApp.js"></script>
+
+
+	<link rel="shortcut icon" href="images/faviconEye02.ico"/>
+	<link href='http://fonts.googleapis.com/css?family=Questrial|Comfortaa' rel='stylesheet' type='text/css'>
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-17109684-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+
+<body ng-app="creationApp" ng-controller="creaghController as vm">
+	<div id="wrap">
+		<div id="main">
+			
+			<div ng-include="'includes/header.html'">
+			</div>
+
+			<div ng-include="'includes/about.html'" ng-show="vm.nav=='About'">
+			</div>
+
+			<div ng-include="'includes/contact.html'" ng-show="vm.nav=='Contact'">
+			</div>
+
+			<div ng-include="'includes/projects.html'" ng-show="vm.nav=='Projects'">
+			</div>
+					
+		</div><!--  end of #main -->
+	</div><!-- end of #wrap -->	
+
+	<div ng-include="'includes/footer.html'">
+	</div>	
+</body>
+
+</html>

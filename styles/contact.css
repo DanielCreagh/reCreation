@@ -1,0 +1,73 @@
+a.contactpanel {
+    display: block;
+    float: left;
+    width: 45%;
+    margin: 0.5em 2.5% 1em 2.5%;
+    outline: #003300 solid thin;
+    background-image: url( '../images/ricepaperdark.jpg' );
+    background-repeat: repeat;
+    background-position: top left;
+    background-attachment: fixed;
+    padding: 0;
+    color: #003300;
+    text-decoration: none;
+}
+
+a.contactpanel .largesocialicon{
+    width: 83.333333%;
+    margin: 8.333333%;
+    border-radius: 35px;
+    background-size: 100%;
+    background-repeat: no-repeat;    
+}
+
+a.contactpanel .largesocialicon img{
+    border-radius: 35px;
+    opacity: 1;
+}
+
+a.contactpanel:hover .largesocialicon img{
+    opacity: 0;
+}
+
+a.contactpanel .largesocialicon.google img,
+a.contactpanel .largesocialicon.google,
+a.contactpanel .largesocialicon.facebook img,
+a.contactpanel .largesocialicon.facebook {
+    border-radius: 35px;
+}
+
+a.contactpanel:link .largesocialicon img,
+a.contactpanel:visited .largesocialicon img {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+@media screen and (min-width: 480px){
+    a.contactpanel {
+        margin-top: 1em;
+    }
+}
+
+@media screen and (min-width: 747px){
+    div.contactcontainer {
+        max-width: 700px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    div.contactsecondrow{
+        max-width: 450px;
+        margin-right: auto;
+        margin-left: auto;        
+    }
+    a.contactpanel {
+        margin: 1em 5% 1em 0;
+        max-width: 200px;  
+    }
+    a.contactpanel.right {
+        margin-right: 0;
+    }
+}

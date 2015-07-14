@@ -1,0 +1,9 @@
+	<a class="projectpanel" href={{project.link}} target="_blank" ng-class="{right: index != 0 && (index+1)%2 == 0}">					
+		<div class="projectimage clear" ng-style="{ 'background-image': 'url(' + project.rollOverImage + ')' }">
+			<img ng-src={{project.mainImage}} alt={{project.description}}/>
+		</div>
+		<div class="projecttitle">{{project.name}}</div>
+		<ul ng-repeat="detail in project.details">
+			<li>{{detail}}</li>
+		</ul>
+	</a>

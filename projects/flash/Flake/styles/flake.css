@@ -1,0 +1,10 @@
+body {
+	background-color: #000033;
+} 
+
+#game {
+    width: 500px;
+    margin: 5em auto 0em auto;
+    position: relative;
+
+}

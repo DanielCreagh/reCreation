@@ -1,0 +1,26 @@
+[
+  { 
+    "name": "iOS",
+    "mainImage": "../images/thumbnails/projectcategories/thumbBack1Apple.png",
+    "rollOverImage": "../images/thumbnails/projectcategories/thumbOverlay1Apple.png",
+    "description": "Apple iOS Project Category"
+  },
+  { 
+    "name": "HTML 5",
+    "mainImage": "../images/thumbnails/projectcategories/thumbBackHTML5.png",
+    "rollOverImage": "../images/thumbnails/projectcategories/thumbOverlayHTML5.png",
+    "description": "HTML5 Project Category"
+  },
+  { 
+    "name": "Flash",
+    "mainImage": "../images/thumbnails/projectcategories/thumbBackFlash.png",
+    "rollOverImage": "../images/thumbnails/projectcategories/thumbOverlayFlash.png",
+    "description": "Adobe Flash Project Category"
+  },
+  { 
+    "name": "Other",
+    "mainImage": "../images/thumbnails/projectcategories/thumbBackOtherStuff.png",
+    "rollOverImage": "../images/thumbnails/projectcategories/thumbOverlayOtherStuff.png",
+    "description": "Other Projects Category"
+  }
+]

@@ -1,0 +1,23 @@
+<div class="content" ng-show="vm.projectsNav=='Main'">
+	<div class="ProjectList wrapper">
+		<ul ng-repeat="projectCategory in vm.projectcategories">
+			<li class="ProjectCategory">
+				<a href="" ng-click="vm.projectsNav=projectCategory.name">
+					<div class="ProjectCategoryImage" ng-style="{ 'background-image': 'url(' + projectCategory.rollOverImage + ')' }"><img ng-src={{projectCategory.mainImage}} alt={{projectCategory.description}}/></div>							
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div ng-include="'includes/projects/flashProjects.html'" ng-show="vm.projectsNav=='Flash'">
+</div>
+
+<div ng-include="'includes/projects/iOSProjects.html'" ng-show="vm.projectsNav=='iOS'">
+</div>
+
+<div ng-include="'includes/projects/html5Projects.html'" ng-show="vm.projectsNav=='HTML 5'">
+</div>
+
+<div ng-include="'includes/projects/otherProjects.html'" ng-show="vm.projectsNav=='Other'">
+</div>

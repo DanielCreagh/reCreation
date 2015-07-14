@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html>	<head> 
+		<title>Tetrid (A tetris clone for HTML5)</title>
+		<meta charset="utf-8">
+
+		<link href="styles/tetrisgame.css" rel="stylesheet" type="text/css">
+		<link href="http://www.creagh.com/styles/debugbar.css" rel="stylesheet" type="text/css">
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script type="text/javascript" src="scripts/tetris.js"></script>		
+	</head> 
+
+
+
+	<body>
+		<div id="DebugBar">
+			<div id="version">
+				Beta v1.0
+			</div>
+			<div id="navbar">
+				Menu
+				<ul>
+					<li>Report Bug</li>
+					<li>Feedback</li>
+					<li>Recent Updates/Fixes</li>
+					<li>Wish List</li>
+					<li>About</li>
+				</ul>
+			</div>
+			<div id="projectname">
+				Tetrid
+			</div>
+
+		</div>	
+
+
+		<div id="game"> 
+			<div id="gameUI">				<div id="gameIntro"> 
+					<h1>Tetrid</h1>					<p>Click play and then press any key to start.</p> 
+					<p><a id="gamePlay" class="button" href="">Play</a></p>
+				</div> 
+
+				<div id="gameStats">
+					<p>Score: <span class="gameScore"></span></p>
+					<p>Level: <span class="level"></span><p> 					<p><a class="gameReset" href="">Reset</a></p>				</div> 
+
+				<div id="gameComplete">
+					<h1>Game over!</h1> 
+					<p>Score: <span class="gameScore"></span></p> 
+					<p><a class="gameReset button" href="">Play again</a></p>				</div>
+
+				<div id="gamePause">
+					<h1>Pause</h1>
+					<p>Press 'p' to resume</p>
+					<p><a class="resume button" href="">Resume</a></p>
+				</div>			</div> 
+
+			<canvas id="gameCanvas" width="600" height="600">				<!-- insert fall back content here -->
+			</canvas>		</div>	</body></html>

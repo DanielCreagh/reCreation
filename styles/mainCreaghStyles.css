@@ -1,0 +1,441 @@
+html {
+    background-color: #f1eeea;
+    background-image: url( '../images/ricepaper.png' );
+    background-repeat: repeat;
+    background-position: top left;
+    font-family: 'Questrial', Verdana, sans-serif; 
+    color: #003300;
+}
+
+
+/* --- HEADER --- */
+div.header {
+    overflow: auto;
+    width: 100%;
+    background: #0c3e45;
+    background-image: url( '../images/darkfadeflip.jpg' );
+    background-repeat: no-repeat;
+    background-position: top left;  
+    color: white;
+    font-size: 3em;
+}
+
+span.caps {
+    font-size: 1.275em;    
+}
+
+div.header div.titletext {
+    padding: 0.25em 0 0 0;
+    text-align: center;
+    text-shadow: #000000 2px 2px 2px;
+    font-family: 'Comfortaa', Verdana, sans-serif;    
+}
+
+div.header div.descriptionbar {
+    overflow: auto;
+    width: 100%;
+}
+
+div.header div.description {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-shadow: #000000 0.125em 1px 0.125em;        
+    text-align: center;
+    font-size: 0.4em;
+}
+
+div.navigation.headerbar {
+    font-family: 'Questrial', Verdana, sans-serif; 
+    display: none;
+}
+
+/* --- End-Of HEADER --- */
+
+/* --- Navigation stuff --- */
+
+div.navigation li a:link,
+div.navigation li a:visited,
+div.navigation li a:active,
+div.navigation li a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+div.navigation li a:link.isSelected,
+div.navigation li a:visited.isSelected,
+div.navigation li a:active.isSelected,
+div.navigation li a:hover.isSelected {
+    color: #e3dfdb;
+}
+
+div.navigation.middle {
+    overflow: auto;
+    display: block;    
+}
+
+div.navigation.middle ul {
+    overflow: auto;
+    background-color: black;
+    border-top: 1px solid black;
+    border-bottom: 2px solid black;    
+}
+    
+div.navigation.middle ul li {
+    float: right;
+    width: 50%;    
+    border-radius: 0;
+    background-color: black;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* the divider */
+div.navigation.middle ul li.isFirst {
+    background-image: url(../images/menu-sep.png);
+    background-position: right top;
+    background-repeat: repeat-y;    
+}
+
+div.navigation.middle ul li a{ 
+    display: block;
+    padding: 0.5em 0 0.5em 0;
+}    
+
+/* -- the roll-over for navigation -- */
+/* -- should be on select? -- */
+div.navigation.middle ul li a:hover, 
+div.navigation.headerbar ul li a:hover,
+div.navigation.headerbar ul li.isFirst a:hover {
+    background: #0a6d67; /* Old browsers */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0a6d67), color-stop(100%,#000000), color-stop(100%,#207cca), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #0a6d67 0%,#000000 100%,#207cca 100%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #0a6d67 0%,#000000 100%,#207cca 100%,#7db9e8 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #0a6d67 0%,#000000 100%,#207cca 100%,#7db9e8 100%); /* IE10+ */
+    background: linear-gradient(top,  #0a6d67 0%,#000000 100%,#207cca 100%,#7db9e8 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a6d67', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+}   
+
+div.navigation.middle ul li a, 
+div.navigation.headerbar ul li a,
+div.navigation.headerbar ul li.isFirst a {
+/*    -webkit-transition: all .3s;
+    -moz-transition: all 3s;
+    -ms-transition: all 3s;
+    -o-transition: all 3s;*/
+    /*transition: all 3s linear;*/
+}
+
+#location a{
+    text-decoration: none;
+    color: #003300;
+}
+
+#location {
+    background-color: transparent;
+    border: none;
+    padding: 0.425em 0 0.1em 0; 
+    font-size: 1.5em;
+    text-align: center;
+    color: #003300;    
+}
+
+/* -- front page content --*/
+
+div.content div.blurb {
+    padding: 0.5em 5% 0 5%;
+    font-size: 1.25em;    
+}
+
+img.frontpageimage.top{
+    display: none;
+}
+
+img.frontpageimage.bottom{
+    width: 66.666666%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- layout --- */
+.wrapper,
+.specialwrapper {
+    width: 100%;
+}
+
+div.content div.title{
+    padding: 0.5em 0 0 0;
+    font-size: 2em;
+}
+    
+/* -- footer content -- */
+hr {
+    position: relative;
+    margin-top: -2px;
+    height: 0;    
+    border: 0;
+    border-top: 1px solid #5d787c;
+    border-bottom: 1px solid #f1eeea;
+}
+
+div.copyrightnotice {
+    padding: 1em 0 0 0; 
+    text-align: center;
+}  
+
+/* =================
+** LOWER MIDDLE SIZE 
+** =================
+*/
+
+@media screen and (min-width: 480px){
+    .wrapper {
+        width: 93.75%; /* 15/16 */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* --- header for middle browser windows --- */
+    div.header div.titletext { 
+        padding-bottom: 0.1em;
+    }
+    div.titletext p {
+        float: left;
+    }
+
+    /* 
+    ** Sub-heading
+    */        
+    div.header div.description {
+        margin: 0;
+        text-align: center;
+        text-shadow: #000000 0.125em 1px 0.125em;
+    }
+    
+    /* --- middle navigation stuff --- */
+    
+    div.navigation.middle {
+        display: block;    
+        border-top: 1px solid black;
+    }
+    div.navigation.middle ul li {
+        float: right;
+        margin: 0.15em 0;
+        border-radius: 0;
+        background: url(../images/menu-sep.png) repeat-y right top;
+        text-align: center;
+        font-size: 1.2em;
+    }
+    div.navigation.middle ul li.isFirst {
+        background-image: url(../images/menu-sep.png), url(../images/menu-sep.png);
+        background-position:  left top, right top;
+        background-repeat: repeat-y;    
+    }
+    div.navigation.middle ul li a{ 
+        display: block;
+        padding: 0.5em 0 0.5em 0;
+    }    
+    
+    div.navigation.middle ul li a:hover, 
+    div.navigation.headerbar ul li a:hover,
+    div.navigation.headerbar ul li.isFirst a:hover {
+        background: #0a6d67; /* Old browsers */
+        background: -moz-linear-gradient(top,  #0a6d67 0%, #000000 100%, #207cca 100%, #7db9e8 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0a6d67), color-stop(100%,#000000), color-stop(100%,#207cca), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  #0a6d67 0%,#000000 100%,#207cca 100%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  #0a6d67 0%,#000000 100%,#207cca 100%,#7db9e8 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  #0a6d67 0%,#000000 100%,#207cca 100%,#7db9e8 100%); /* IE10+ */
+        background: linear-gradient(top,  #0a6d67 0%,#000000 100%,#207cca 100%,#7db9e8 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a6d67', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+    }    
+    
+    #location {
+        font-size: 2em;      
+    }
+
+    div.content div.blurb {
+        padding: 0.5em 0 0 0;
+    }
+
+    img.frontpageimage.bottom{
+        display: none;
+    }
+
+    img.frontpageimage.top {
+        display: block;
+        float: right;        
+        width: 33.333333%;
+        margin-top: -1.5em;
+    }
+ 
+    /* ======
+    ** FOOTER
+    ** ======
+    */ 
+    div.copyrightnotice {
+        float: left;
+        padding: 1em 0 0 0; 
+    }
+}
+
+/* =================
+** UPPER MIDDLE SIZE 
+** =================
+*/
+
+@media screen and (min-width: 510px){
+    div.header div.description {
+        margin: 0 8.333333% 0 0;
+        float: right;
+    }
+
+    .specialwrapper {
+        width: 93.75%; /* 15/16 */
+        margin-left: auto;
+        margin-right: auto;        
+    }
+    div.navigation.middle {
+        border-bottom: 1px solid black;
+        background: black;        
+        padding: 0;
+    }
+    div.navigation.middle ul {
+        overflow: visible;
+    }    
+    div.navigation.middle ul li {
+        float: right;
+        width: 16.666667%; /* 1/6 */
+        margin: 0.34em 0;
+        text-align: center;
+        font-size: 1.2em;
+    }    
+    #location {
+        float: left;
+        padding: 0.425em 0 0.425em 0;
+        color: white;  
+        font-size: 1.5em;      
+    }
+    #location a {
+        color: white;
+    }    
+    
+    /* -- front page content --*/
+    div.content div.blurb {
+        font-size: 1.5em;
+    }
+    img.frontpageimage.top {
+        margin-top: 0;
+    }
+}
+
+
+/* ============
+** LARGEST SIZE 
+** ============
+*/
+
+@media screen and (min-width: 830px){
+    div.header div.titletext {
+        overflow: auto;
+        padding: 0.25em 0 0.25em 0;
+    }
+    div.header div.descriptionbar {
+        margin: 0;
+        background: black;
+    }
+    div.header div.description{
+        float: left;
+        padding-left: 8.333333%;
+    }
+    
+    /* 
+    ** Navigation buttons when in header bar
+    */
+    div.navigation.headerbar {
+        display: block;
+        float: right;
+        margin: 0.25em 0 0 0;
+        width: 33.333333%;        
+        /*border-radius: 5px;*/
+        border: 1px solid black;
+        background: black;
+    }
+    div.navigation.headerbar ul {
+        overflow: auto;
+    }        
+    div.navigation.headerbar ul li {
+        float: left;
+        width: 33.333333%;
+    }
+    div.navigation.headerbar ul li a {
+        display: block;
+        width: 100%;    
+        background: url(../images/menu-sep.png) repeat-y left top;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        text-align: center;
+        font-size: 0.4em;        
+    }
+    div.navigation.headerbar ul li a:hover,
+    div.navigation.headerbar ul li.isFirst a:hover {
+        background: #0a6d67; /* Old browsers */
+        background: -moz-linear-gradient(top,  #0a6d67 0%, #000000 100%, #207cca 100%, #7db9e8 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0a6d67), color-stop(100%,#000000), color-stop(100%,#207cca), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  #0a6d67 0%,#000000 100%,#207cca 100%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  #0a6d67 0%,#000000 100%,#207cca 100%,#7db9e8 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  #0a6d67 0%,#000000 100%,#207cca 100%,#7db9e8 100%); /* IE10+ */
+        background: linear-gradient(top,  #0a6d67 0%,#000000 100%,#207cca 100%,#7db9e8 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a6d67', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */             
+    }
+    div.navigation.headerbar ul li.isFirst a {
+        background: none;
+    }
+    div.navigation.headerbar ul li.isLast a {
+        float: right;
+    }
+/*    div.navigation.headerbar ul li.isLast a:hover  {    
+        border-radius: 0 5px 5px 0;          
+    }
+    div.navigation.headerbar ul li.isFirst a:hover  {
+        border-radius: 5px 0 0 5px;  
+    }   */
+    
+    div.navigation.middle, #location {
+        border: none;    
+        background-color: transparent;
+        color: #003300;
+    }
+    #location {
+        float: none;
+        padding-bottom: 1px;
+        text-align: center;
+        color: #003300;
+        font-size: 2em;        
+    }
+    #location a {
+        color: #003300;
+    }   
+
+    /* -- hide the other menu bar -- */
+    div.navigation.middle ul{ 
+        display: none;
+    }
+    div.frontpageimage {
+        overflow: visible;
+        float: right;
+        width: 50%;
+    } 
+    
+    /* -- front page content --*/
+    img.frontpageimage.top {
+        margin-top: -1.5em;
+    }  
+
+}
+
+@media screen and (min-width: 960px){
+    .wrapper {
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

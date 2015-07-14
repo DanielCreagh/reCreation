@@ -1,0 +1,34 @@
+[
+  { 
+    "name": "Buzzing around Bucharest",
+    "mainImage": "../images/thumbnails/otherprojects/BuzzingThumb03.jpg",
+    "rollOverImage": "../images/thumbnails/otherprojects/BuzzingThumbOverlay.png",
+    "description": "Buzzing around Bucharest",
+    "link": "http://www.youtube.com/watch?v=qO8A2E2sG9g",
+    "details": [ 
+      "Photography from delta plane & Cessna",
+      "Video editing"
+    ]
+  },
+  { 
+    "name": "Kaji Music Bucharest",
+    "mainImage": "../images/thumbnails/otherprojects/KajiThumb01.png",
+    "rollOverImage": "../images/thumbnails/otherprojects/KajiThumbOverlay.png",
+    "description": "Kaji Music: Bucharest",
+    "link": "http://www.youtube.com/watch?v=ZDXt3a0vovI&feature=channel_video_title",
+    "details": [ 
+      "Live music performance",
+      "Rhythm Guitar & Vocals"
+    ]
+  },
+  { 
+    "name": "Misanthropia",
+    "mainImage": "../images/thumbnails/otherprojects/SoundCloudThumb01.jpg",
+    "rollOverImage": "../images/thumbnails/otherprojects/MusicThumbOverlay.png",
+    "description": "Misanthropia",
+    "link": "http://soundcloud.com/m1santhrop1a/misanthropia",
+    "details": [ 
+      "Electronic music production"
+    ]
+  }    
+]

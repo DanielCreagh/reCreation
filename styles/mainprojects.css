@@ -1,0 +1,154 @@
+.ProjectList {
+    color: #6DA169;
+}
+
+li.ProjectCategory {
+    float: left;
+    width: 41.666667%;
+    margin: 1em 4.166667% 1em 4.166667%;    
+}
+
+li.ProjectCategory a {
+    display: block;
+    overflow: auto;
+    width: 100%;
+    outline: #003300 solid thin;
+}
+/*
+li.ProjectCategory a:hover {
+    background-color: #0d776b; 
+}
+*/
+li.ProjectCategory a:hover div.ProjectCategoryImage img{
+    opacity: 1;
+}
+
+li.ProjectCategory a div.ProjectCategoryImage img{
+    opacity: 0;
+}
+
+li.ProjectCategory a:link,
+li.ProjectCategory a:visited,
+li.ProjectCategory a:link div.ProjectCategoryImage img,
+li.ProjectCategory a:visited div.ProjectCategoryImage img,
+a:link.projectpanel img,
+a:visited.projectpanel img {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+div.ProjectCategoryImage{
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;    
+}
+
+a.projectpanel{
+    display: block;
+    float: left;
+    width: 100%;
+    outline: #003300 solid thin;
+    margin: 1em 0;    
+    background-image: url( '../images/ricepaperdark.jpg' );
+    background-repeat: repeat;
+    background-position: top left;
+    background-attachment: fixed;    
+    padding: 1em 0;    
+    text-decoration: none;  
+    color: #003300;
+}
+
+/* to stop object pushing to next line */
+a.projectpanel.right{
+    margin-right: 0;
+}
+
+a.projectpanel div.projectimage {
+    float: right;
+    width: 33.333333%;
+    margin: 0 6.25% 0 0;
+    outline: #003300 solid thin;
+    background-size: 100%;
+    background-repeat: no-repeat;     
+}
+a.projectpanel img{
+    opacity: 1;
+}
+
+a.projectpanel:hover img{
+    opacity: 0;
+}
+
+a.projectpanel div.projecttitle{
+    margin-left: 6.25%;
+    padding-bottom: 0.5em;
+    text-shadow: 0 1px 0 #D7EEF2;    
+    font-size: 2em;
+}
+
+a.projectpanel ul{
+    margin-left: 6.25%;
+    list-style: circle;
+}
+
+a.projectpanel ul li{
+    padding-bottom: 0.25em;
+    font-size: 1.25em;
+}
+
+#location a:hover{
+    text-decoration: underline;
+}
+
+/* =================
+** LOWER MIDDLE SIZE 
+** =================
+*/
+
+@media screen and (min-width: 770px){
+    li.ProjectCategory{
+        margin: 2em 4.166667%;
+    }
+}
+
+/* =================
+** UPPER MIDDLE SIZE 
+** =================
+*/
+
+@media screen and (min-width: 770px){
+    li.ProjectCategory {
+        float: left;
+        width: 20%;
+        margin: 2em 2.5%;
+    }
+    
+    /* === swap these round to make it look snazier on desktop resolutions === */
+    /* === essentially because no mouse-over action on iPad === */
+    
+    li.ProjectCategory a:hover div.ProjectCategoryImage img{
+        opacity: 0;
+    }
+
+    li.ProjectCategory a div.ProjectCategoryImage img{
+        opacity: 1;
+    }
+
+    /* Individual project panel adjustments
+    */
+
+    a.projectpanel{
+        width: 45.833333%;   
+        margin: 1em 8.333333% 1em 0;
+    }
+    a.projectpanel div.projecttitle{
+        font-size: 1.5em;    
+    }
+
+    a.projectpanel ul li{
+        font-size: 1em;
+    }
+}
