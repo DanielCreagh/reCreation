@@ -5,6 +5,7 @@ html {
     background-position: top left;
     font-family: 'Questrial', Verdana, sans-serif; 
     color: #003300;
+    animation: fadein 2s;
 }
 
 
@@ -28,7 +29,25 @@ div.header div.titletext {
     padding: 0.25em 0 0 0;
     text-align: center;
     text-shadow: #000000 2px 2px 2px;
-    font-family: 'Comfortaa', Verdana, sans-serif;    
+    font-family: 'Comfortaa', Verdana, sans-serif;
+}
+
+.firstC {
+    animation: fadein 6s;
+}
+.reagh{
+    animation: fadein 8s;    
+}
+.secondC{
+    animation: fadein 10s;    
+}
+.reations{
+    animation: fadein 12s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 div.header div.descriptionbar {
